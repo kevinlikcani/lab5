@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>CSS Manipulation</title> 
+        <style>#myDIV {
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+        }</style>
+        
+    </head>  
+    <body> 
+        <script type = "text/javascript">
+        function changeSettings()
+        {
+            var borderColor = document.getElementById("border").value;
+            var newWidth = document.getElementById("borderWidth").value;
+            var backgroundColor = document.getElementById("background").value;
+
+
+            if(borderColor == "#FF0000")
+            {
+                document.getElementById("myDIV").style.borderColor = "#FF0000";
+            }
+            else  if(borderColor == "#00FF00")
+            {
+                document.getElementById("myDIV").style.borderColor = "green";
+            }
+            else if(borderColor == "#0000FF")
+            {
+                document.getElementById("myDIV").style.borderColor = "blue";
+            }
+             
+            document.getElementById("myDIV").style.borderWidth = newWidth;  
+
+            if(backgroundColor == "#FF0000")
+            {
+                document.getElementById("myDIV").style.backgroundColor = "red";
+            }
+            else  if(backgroundColor == "#00FF00")
+            {
+                document.getElementById("myDIV").style.backgroundColor = "green";
+            }
+            else if(backgroundColor == "#0000FF")
+            {
+                document.getElementById("myDIV").style.backgroundColor = "blue";
+            }
+            
+        }
+        
+        </script>
+        <center>
+            <div style = "border-style: solid;" id = "myDIV">
+            <p>This document is using 00-FF units. For color red enter: #FF0000. For color green enter: #00FF00. For color blue enter: #0000FF. For border value, enter thick, thin, or medium. You may also enter a numeric value followed by "px", "pt", or "em"</p>
+            </div>
+            <p>enter border color: <input id="border" value=""></p>  
+            <p>enter border value: <input id="borderWidth" value=""></p>          
+            <p>enter background color: <input id="background" value=""></p>              
+            <button onclick="changeSettings()">Apply Color</button>   
+        </center>
+    </body> 
+</html>
+
+
+
