@@ -1,0 +1,26 @@
+body 
+{ 
+    background-image: url(sky.jpg); background-size: 100%; 
+    background-repeat: no-repeat; background-attachment: fixed; }
+
+h1
+{
+    background-color: white; color: cornflowerblue;
+}
+
+p 
+{ 
+    background-color: white; color: black; 
+} 
+
+a:hover  
+{ 
+    background-color: cornflowerblue; 
+    color: white; 
+} 
+ 
+a
+{ 
+    background-color: white; 
+    color: cornflowerblue;
+} 
